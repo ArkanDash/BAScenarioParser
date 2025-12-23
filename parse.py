@@ -7,10 +7,10 @@ from scenario.character_scenario import parsing_character_story
 from messanger.character_messanger import parsing_character_messanger
 
 if __name__ == '__main__':
-    excels_path = Path(os.getcwd(), "Excels")
-    character_path = Path(excels_path, "Character.json")
-    scenario_path = Path(excels_path, "ScenarioScript.json")
-    messanger_path = Path(excels_path, "AcademyMessanger.json")
+    excels_path = os.path.join(os.getcwd(), "Excels")
+    character_path = os.path.join(excels_path, "Character.json")
+    scenario_path = os.path.join(excels_path, "ScenarioScript.json")
+    messanger_path = os.path.join(excels_path, "AcademyMessanger.json")
     
     character_data = load_json(character_path)
     scenario_data = load_json(scenario_path)

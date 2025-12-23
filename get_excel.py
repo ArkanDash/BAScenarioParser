@@ -1,5 +1,6 @@
 import urllib.request
 import argparse
+import json
 
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
@@ -13,8 +14,10 @@ def download_file(file_info):
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         
         with urllib.request.urlopen(req) as response:
-            with open(destination, 'wb') as out_file:
-                out_file.write(response.read())
+            parsed_json = json.loads(response.read().decode('utf-8'))
+            with open(destination, 'w', encoding='utf-8') as out_file:
+                json.dump(parsed_json, out_file, ensure_ascii=False, indent=2)
+                
         print(f"✅ Finished: {file_name}")
         return True
     except Exception as e:
