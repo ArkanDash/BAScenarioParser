@@ -241,3 +241,79 @@ MessageJP: 確かに何でもと言いましたが、そんなことにせっか
 100180410 | 4
 MessageKR: 이 정도는 그냥 부탁해도 사다 드릴 수 있다고요!
 MessageJP: これぐらいでしたら、普通に言っていただければ買ってきますから！
+
+100180420 | 1
+MessageKR: 잃어버렸다고 생각한 물건은
+MessageJP: 失くしたものって
+
+100180430 | 0
+MessageKR: 꼭 예상치 못한 의외의 장소에서
+MessageJP: 探し回った結果
+
+100180440 | 0
+MessageKR: 나오는 경우가 많은 것 같아요.
+MessageJP: 予想外の場所にあるんですよね……
+
+100180450 | 3
+MessageKR: 아, 알 것 같아.
+MessageJP: 分かるー！
+
+100180450 | 3
+MessageKR: 리모콘처럼 자주 쓰는 물건이라면 더더욱……
+MessageJP: リモコンとかね……
+
+100180460 | 4
+MessageKR: 물론 실제로는 단순히
+MessageJP: 実際には
+
+100180460 | 4
+MessageKR: 물건을 둔 장소를 잊어버렸을 가능성이
+MessageJP: どこに置いたか忘れただけ
+
+100180460 | 4
+MessageKR: 높지만요.
+MessageJP: なんでしょうけど……
+
+100180470 | 4
+MessageKR: 하지만 다른 사람들도
+MessageJP: みんな同じ経験をしがちだからか
+
+100180470 | 4
+MessageKR: 비슷한 경험을 자주 겪었는지
+MessageJP: 昔の方はこういう時
+
+100180480 | 4
+MessageKR: 옛날에는 이런 일이 생기면
+MessageJP: 「いたずら好きな妖精さん」
+
+100180480 | 4
+MessageKR: 장난꾸러기 요정이 물건을 훔쳐 갔다고
+MessageJP: ……に盗まれてしまった、と
+
+100180480 | 4
+MessageKR: 여겼다네요.
+MessageJP: 考えたそうです
+
+100180490 | 3
+MessageKR: 흥미로운 이야기네.
+MessageJP: 面白い話だね
+
+100180500 | 3
+MessageKR: 그나저나 그런 화제를 꺼내는 걸 보니
+MessageJP: もしかして……
+
+100180510 | 3
+MessageKR: 뭔가 잃어버린 물건이라도 있는 거야?
+MessageJP: 何か物でも失くしちゃった？
+
+100180520 | 4
+MessageKR: 아뇨
+MessageJP: い、いえ
+
+100180530 | 4
+MessageKR: ……사실 뭔가 잃어버렸다 하더라도
+MessageJP: 何も忘れてません
+
+100180530 | 4
+MessageKR: 지금은 기억할 수 없을 것 같아요.
+MessageJP: ……多分

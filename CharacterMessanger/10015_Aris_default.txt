@@ -261,3 +261,39 @@ MessageJP: アリスならきっとなれるよ
 1001500400 | 4
 MessageKR: 감사합니다. 선생님.
 MessageJP: ありがとうございます、先生
+
+1001500410 | 1
+MessageKR: 선생님.
+MessageJP: 先生
+
+1001500420 | 0
+MessageKR: 바쁘십니까?
+MessageJP: 今って忙しいですか？
+
+1001500430 | 3
+MessageKR: 아리스가 부르면 바쁘지 않아!
+MessageJP: 全然大丈夫！
+
+1001500440 | 4
+MessageKR: 와아!
+MessageJP: 良かったです！
+
+1001500440 | 4
+MessageKR: 그러면 말이에요.
+MessageJP: 実はアリス
+
+1001500440 | 4
+MessageKR: 아리스는 선생님께 보여드리고 싶은 것이 있습니다!
+MessageJP: 先生に見せたいものがあります！
+
+1001500450 | 3
+MessageKR: 나에게 보여주고 싶은 것?
+MessageJP: 見せたいもの……？
+
+1001500460 | 4
+MessageKR: 네.
+MessageJP: はい！
+
+1001500460 | 4
+MessageKR: 게임개발부실에서 기다리고 있겠습니다!
+MessageJP: ゲーム開発部の部室で、待ってますね！

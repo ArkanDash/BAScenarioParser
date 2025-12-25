@@ -297,3 +297,71 @@ MessageJP: ありがとう、先生殿……
 160090580 | 4
 MessageKR: 기, 기다리고 있겠습니다아….
 MessageJP: えっと、待ってるからね……
+
+160090590 | 1
+MessageKR: 선생 공.
+MessageJP: 先生殿
+
+160090600 | 0
+MessageKR: 구시대의 고문서라던가
+MessageJP: 遠い昔の古文書や
+
+160090610 | 0
+MessageKR: 혹은 오래된 고대의 기록매체……
+MessageJP: 古代の記録媒体に
+
+160090620 | 0
+MessageKR: 그런 것에 관심이 있는가?
+MessageJP: 興味はお有りだろうか……
+
+160090630 | 3
+MessageKR: 설마 에인션트 닌자의……
+MessageJP: まさか、エンシェント忍者の……！
+
+160090630 | 3
+MessageKR: 고대 두루마리라도 입수한 건가!
+MessageJP: あの古代の巻物が！？
+
+160090640 | 4
+MessageKR: 냐하핫! 역시 선생 공이야!
+MessageJP: さっすが先生殿！
+
+160090640 | 4
+MessageKR: 그렇게 말해줄 줄 알았어!
+MessageJP: 良い反応～！
+
+160090650 | 4
+MessageKR: 하지만 틀렸어!
+MessageJP: でもそれじゃない
+
+160090660 | 3
+MessageKR: 아니야?!
+MessageJP: この流れで！？
+
+160090670 | 4
+MessageKR: 뭐 굳이 따지자면
+MessageJP: 正確に言うと
+
+160090680 | 4
+MessageKR: 반쯤 맞추기는 한 것이지만…….
+MessageJP: 半分は正解なんだけどねー
+
+160090690 | 4
+MessageKR: 그러니까 혹시 궁금하다면
+MessageJP: もし気になるなら
+
+160090690 | 4
+MessageKR: 저번의 그 상점가 입구에서 보자고!
+MessageJP: 商店街まで来て！
+
+160090700 | 4
+MessageKR: 기다리고 있겠소! 선생 공!
+MessageJP: 待ってるよー、先生殿！
+
+160090710 | 4
+MessageKR: (슈바바밧) <- 빠르게 달리는 소리
+MessageJP: （シュバババッ）←素早く走る音
+
+160090720 | 3
+MessageKR: 그, 그래…….
+MessageJP: う、うん……
