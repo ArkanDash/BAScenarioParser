@@ -1,10 +1,10 @@
-import os
 import json
 
 from collections import defaultdict
+from pathlib import Path
+from typing import Union
 
-
-def load_json(json_path: str):
+def load_json(json_path: Union[str, Path]):
     try:
         with open(json_path, "r", encoding="utf-8") as infile:
             raw_data = json.load(infile)
@@ -18,17 +18,6 @@ def load_json(json_path: str):
         print(f"Error: Could not decode JSON from {json_path}")
         raise e
 
-def save_json(json_path: str, data: dict):
-    try:
-        directory = os.path.dirname(json_path)
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-        with open(json_path, "w", encoding="utf-8") as outfile:
-            json.dump(data, outfile, ensure_ascii=False, indent=4)
-    except Exception as e:
-        print(f"Error: Could not save JSON to {json_path}")
-        raise e
-
 def group_records(records, key: str) -> dict:
     grouped = defaultdict(list)
     for record in records:
@@ -37,16 +26,9 @@ def group_records(records, key: str) -> dict:
             grouped[value].append(record)
     return dict(grouped)
 
-def save_toml(toml_path: str, translations: dict):
-    try:
-        directory = os.path.dirname(toml_path)
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-        lines = ["[translation]"]
-        for key, value in translations.items():
-            lines.append(f"{json.dumps(str(key), ensure_ascii=False)} = {json.dumps(str(value), ensure_ascii=False)}")
-        with open(toml_path, "w", encoding="utf-8", newline="\n") as outfile:
-            outfile.write("\n".join(lines) + "\n")
-    except Exception as e:
-        print(f"Error: Could not save TOML to {toml_path}")
-        raise e
+def save_toml(toml_path: Path, translations: dict):
+    lines = ["[translation]"]
+    for key, value in translations.items():
+        lines.append(f"{json.dumps(str(key), ensure_ascii=False)} = {json.dumps(str(value), ensure_ascii=False)}")
+    toml_path.parent.mkdir(parents=True, exist_ok=True)
+    toml_path.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")

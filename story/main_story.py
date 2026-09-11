@@ -1,29 +1,12 @@
-﻿from bisect import bisect_right
+from bisect import bisect_right
 from pathlib import Path
 from typing import Dict, List, Any
 
 from lib.helper import save_toml
-from lib.character_name import extract_character_name, resolve_character_name
+from lib.scenario import build_translations
 
 SCOPED_MODE_TYPES = ("Main", "Prologue", "SpecialOperation", "Sub", "Mini")
 UNREFERENCED_GAP_LIMIT = 50
-
-
-def build_translations(script_rows: List[Dict[str, Any]], group_id: int, character_name_map: dict) -> Dict[str, str]:
-    translations: Dict[str, str] = {}
-    line_counter = 0
-    for record in script_rows:
-        text_jp = str(record.get("TextJp", ""))
-        if not text_jp.strip():
-            continue
-        line_counter += 1
-        key = f"{group_id}-{line_counter}"
-        speaker_kr = extract_character_name(record.get("ScriptKr", ""))
-        if speaker_kr:
-            key += f"-{resolve_character_name(character_name_map, speaker_kr)}"
-        translations[key] = text_jp
-    return translations
-
 
 def parsing_main_story(mode_data, scenario_groups: Dict[int, list], output_root: Path, character_name_map: dict):
     referenced_owners: Dict[int, List[Dict[str, Any]]] = {}
@@ -38,8 +21,8 @@ def parsing_main_story(mode_data, scenario_groups: Dict[int, list], output_root:
             output_root,
             str(mode_record["ModeType"]),
             str(mode_record["SubType"]),
-            f"Vol{str(mode_record["VolumeId"])}",
-            f"Chap{str(mode_record["ChapterId"])}",
+            f"Vol{mode_record['VolumeId']}",
+            f"Chap{mode_record['ChapterId']}",
             f"{group_id}_Ep{mode_record['EpisodeId']}.toml",
         )
 
@@ -48,7 +31,7 @@ def parsing_main_story(mode_data, scenario_groups: Dict[int, list], output_root:
 
     def write_translations(mode_record: Dict[str, Any], group_id: int, translations: Dict[str, str]):
         nonlocal written_files, written_lines
-        save_toml(str(output_file_for(mode_record, group_id)), translations)
+        save_toml(output_file_for(mode_record, group_id), translations)
         written_files += 1
         written_lines += len(translations)
 
